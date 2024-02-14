@@ -27,16 +27,11 @@ main {
 .devicon-github-original{
   font-size: 60px;
   margin-bottom: 30px;
-  color: #FFFFFF;
+  color: hotpink;
 }
 
 .section{
   padding: 70px 0;
-}
-
-.events.section{
-  padding: 0 0;
-
 }
 
 .container {
@@ -115,7 +110,7 @@ main {
 .container .profile-data .info img{
   width: 50%;
   border-radius: 50%;
-  border: 10px solid hotpink;
+  border: 5px double hotpink;
 }
 
 .container .profile-data .info h1{
@@ -153,10 +148,9 @@ main {
 .container .profile-data .repositories ul{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  /* display: flex;
-  flex-wrap: wrap;
-  justify-content: center; */
+  
 }
+
 
 .container .profile-data .repositories ul li a{
   padding: 20px;
@@ -165,11 +159,13 @@ main {
   display: block;
   border-radius: 7px;
   transition: 0.3s ease-in-out;
+  border: 3px double hotpink;
 }
 
 .container .profile-data .repositories ul li a:hover{
   background-color:hotpink;
-  color: #fff
+  color: #fff;
+  
 }
 
 .container .profile-data .repositories ul li .interacao {
