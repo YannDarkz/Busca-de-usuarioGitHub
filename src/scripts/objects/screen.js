@@ -22,7 +22,7 @@ const screen = {
                                                   <div class="star-undefined">⭐ ${repos.stargazers_count}</div>
                                                   <div>👀 ${repos.watchers}</div>
                                                   <div class="langNull">👩‍💻 ${repos.language ? repos.language
-                                                :"Sem linguagem"}</div>
+                                                :"noLinguage"}</div>
                                               </div> 
                                               </a>             
                                          </li>`
@@ -45,7 +45,7 @@ const screen = {
                     eventsList += `<li><span class="font-bold">${event.repo.name}</span> - ${event.type}: sem descrição</li>`
                 }
                 
-                //  eventsItens += `<li><a href="${event.url}" target="_blank"> <strong class="font-bold">${event.repo.name}<strong> - ${event.payload.commits} </a></li>`
+                
         })
         
             if(user.events.length > 0){
