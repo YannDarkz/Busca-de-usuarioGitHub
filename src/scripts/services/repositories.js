@@ -6,4 +6,4 @@ async function getRepositories(userName){
     }
    
    
-    export {getRepositories}
+    export { getRepositories }

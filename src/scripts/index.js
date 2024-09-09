@@ -25,15 +25,14 @@ document.getElementById('input-search').addEventListener('keyup', (e) => {
 
 function validateEmptyInput(userName) {
     if (userName.length === 0) {
-        alert('Preencha o campo com o nome do usuário do GitHub')
+        alert('Preencha o campo com o nome do usuário do GitHub!')
         return true
     }
 }
-
 async function getUserData(userName) {
 
     const userResponse = await getUser(userName)
-        if (userResponse.message === "Not Found") {
+    if (userResponse.message === "Not Found") {
         screen.renderNotFound()
         return
     }
@@ -44,6 +43,5 @@ async function getUserData(userName) {
     user.setInfo(userResponse)
     user.setRepositories(repositoriesResponse)
     user.setEvents(eventsResponse)
-
     screen.renderUser(user)
 }
